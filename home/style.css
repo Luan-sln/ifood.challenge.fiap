@@ -450,6 +450,11 @@ header .image-text .company {
     color: var(--blue);
 }
 
-.description{
-    
+.btn-filtro{
+    background-color: var(--sidebar-color);
+    padding: 8px;
+    border: 1px solid var(--line);
+    color: var(--primary-color-light);
+    border-radius: 5px;
+    width: 12%;
 }
