@@ -6,6 +6,22 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    /* ===== Colors ===== */
+    --body-color: #252836;
+    --sidebar-color: #1F1D2B;
+    --primary-color: #CC0000;
+    --primary-color-light: #FFFFFF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+    --title-color: #cfcfcf;
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+
 
 a {
     text-decoration: none;
@@ -33,7 +49,7 @@ body {
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: #fafbfe;
+    background-color: var(--body-color);
 }
 
 #sidebar {
@@ -41,7 +57,7 @@ body {
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
-    background-color: #0e2238;
+    background-color: var(--sidebar-color);
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +70,7 @@ body {
 .sidebar-logo{
     display: flex;
     flex-direction: column;
-    color: #fafbfe;
+    color: var(--primary-color-light);
 }
 .sidebar-logo .name {
     margin-top: 2px;
@@ -77,7 +93,7 @@ body {
 
 .toggle-btn i {
     font-size: 1.5rem;
-    color: #FFF;
+    color: var(--primary-color);
 }
 
 .sidebar-logo {
@@ -85,7 +101,7 @@ body {
 }
 
 .sidebar-logo a {
-    color: #FFF;
+    color: var(--primary-color);
     font-size: 1.15rem;
     font-weight: 600;
 }
@@ -102,7 +118,7 @@ body {
 
 a.sidebar-link {
     padding: .625rem 1.625rem;
-    color: #FFF;
+    color: var(--primary-color);
     display: block;
     font-size: 0.9rem;
     white-space: nowrap;
@@ -115,10 +131,14 @@ a.sidebar-link {
 }
 
 a.sidebar-link:hover {
-    background-color: rgba(255, 255, 255, .075);
-    border-left: 3px solid #3b7ddd;
+    background-color: var(--body-color);
+    border-left: 3px solid var(--primary-color);
 }
-
+a.sidebar-link:focus {
+    background-color: var(--body-color);
+    border-left: 3px solid var(--primary-color-light);
+    color: var(--primary-color-light);
+}
 .sidebar-item {
     position: relative;
 }
@@ -127,7 +147,7 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: var(--sidebar-color);
     padding: 0;
     min-width: 15rem;
     display: none;

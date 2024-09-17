@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
     
     <link rel="stylesheet" href="style.css">
-    
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-    <title>Dashboard</title> 
+    <title>BackOffice</title>
 </head>
-<body>
-    <div></div>
 
+<body>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -35,14 +36,14 @@
                 <ul class="menu-links">
                     <li class="nav-link">
                         <a href="/home/">
-                            <i class='bx bx-home-alt icon' ></i>
+                            <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Tela Inicial</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
                             <span class="text nav-text">Relatórios</span>
                         </a>
                     </li>
@@ -56,21 +57,21 @@
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <i class='bx bx-pie-chart-alt icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
+                            <i class='bx bx-wallet icon'></i>
                             <span class="text nav-text">Gestão Financeira</span>
                         </a>
                     </li>
 
                     <li class="nav-link">
                         <a href="#">
-                            <i class='bx bx-code-curly icon' ></i>
+                            <i class='bx bx-code-curly icon'></i>
                             <span class="text nav-text">Segurança</span>
                         </a>
                     </li>
@@ -81,17 +82,92 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
+                        <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
-                
+
             </div>
         </div>
-
     </nav>
 
-    <script src="script.js"></script>
+    <div class="content-dashboard">
+        <header class="header-dashboard">
+            <h1 class="title-dashboard">Dashboard - Oasis Food</h1>
+            <h2 class="subtitle-dashboard" id="current-date">Segunda, 03 de Agosto 2025</h2>
+        </header>
+    </div>
 
+    <div class="content-grid container-sm text-center">
+        <div class="grid row">
+            <div class="col dash-col">
+                <header class="header-grid row">
+                    <div class="col header-col">
+                        <div class="box">
+                            <i class='bx bx-dollar-circle main-icon'></i>
+                        </div>
+                    </div>
+                    <div class="col header-col">
+                        <a class="gain-info-text">+32.70%</a>
+                        <i class='bx bx-up-arrow-alt icon-green'></i>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <h2 class="number">$10,243.00</h2>
+                    <p class="subtitle-dashboard">Ganhos Totais</p>
+                </div>
+
+            </div>
+            <div class="col dash-col">
+                <header class="header-grid row">
+                    <div class="col header-col">
+                        <div class="box">
+                            <i class='bx bx-dish main-icon'></i>
+                        </div>
+                    </div>
+                    <div class="col header-col">
+                        <a class="lose-info-text">-10.00%</a>
+                        <i class='bx bx-down-arrow-alt icon-red'></i>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <h2 class="number">12,456</h2>
+                    <p class="subtitle-dashboard">Total de Pedidos</p>
+                </div>
+
+
+            </div>
+            <div class="col dash-col">
+
+                <header class="header-grid row">
+                    <div class="col header-col">
+                        <div class="box">
+                            <i class='bx bx-group main-icon'></i>
+                        </div>
+                    </div>
+                    <div class="col header-col">
+                        <a class="gain-info-text">+25.00%</a>
+                        <i class='bx bx-up-arrow-alt icon-green'></i>
+                    </div>
+                </header>
+
+                <div class="content">
+                    <h2 class="number">1,313</h2>
+                    <p class="subtitle-dashboard">Total de Clientes</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid row">
+            <div class="col-8 dash-col">
+                CONTEUDO
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
