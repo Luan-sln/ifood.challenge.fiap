@@ -401,7 +401,18 @@ header .image-text .company {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
+.header-btn{
+    display: flex;
+    border-radius: 6px;
+    color: var(--title-color);
+    text-align: start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 13px;
+}
 .header-col{
     margin: 0px 2px 0px 0px;
 }
@@ -457,4 +468,18 @@ header .image-text .company {
     color: var(--primary-color-light);
     border-radius: 5px;
     width: 12%;
+    transition: var(--tran-03)
+}
+.btn-filtro:hover{
+    background-color: var(--primary-color);
+    transition: var(--tran-03);
+}
+
+.clients-row{
+    border-bottom: 2px solid var(--line);
+    border-radius: 0px;
+    justify-content: space-between;
+}
+.clients-col{
+    margin: 20px 20px 15px 20px;
 }
