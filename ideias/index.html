@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid com Colunas Independentes</title>
+    <style>
+        .grid-pai {
+            display: grid;
+            grid-template-columns: 300px auto; /* Primeira coluna fixa, segunda coluna auto */
+            gap: 20px;
+            height: 100vh; /* Altura total da viewport */
+        }
+
+        .coluna1 {
+            background-color: #f0f0f0;
+            padding: 20px;
+            overflow: hidden; /* Evita que o conteúdo da primeira coluna se expanda */
+        }
+
+        .coluna2 {
+            display: grid;
+            grid-template-rows: 1fr 1fr; /* Duas linhas na segunda coluna */
+            gap: 20px;
+            overflow: hidden; /* Evita que o conteúdo da segunda coluna se expanda */
+        }
+
+        .linha1,
+        .linha2 {
+            background-color: #d0d0d0;
+            padding: 20px;
+            overflow: auto; /* Permite rolagem se o conteúdo for maior que o contêiner */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-pai">
+        <div class="coluna1">
+            Conteúdo da Coluna 1
+        </div>
+        <div class="coluna2">
+            <div class="linha1">
+                Conteúdo da Linha 1 na Coluna 2
+            </div>
+            <div class="linha2">
+                Conteúdo da Linha 2 na Coluna 2
+            </div>
+        </div>
+    </div>
+</body>
+</html>

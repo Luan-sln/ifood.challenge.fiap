@@ -18,10 +18,10 @@
     --text-color: #707070;
     --title-color: #cfcfcf;
     --gain-green: #50D1AA;
-    --delivered-green: #6be2be6b;
-    --prepare-purple: #9290fe6b;
+    --delivered-green: #6be2be1a;
+    --prepare-purple: #9290fe1a;
     --prepare-text-purple: #9290FE;
-    --pending-orange: #FFB5726b;
+    --pending-orange: #FFB5721a;
     --pending--text-orange: #FFB572;
     --lose-red: #FF7CA3;
     --orange: #FFB572;
@@ -303,17 +303,27 @@ header .image-text .company {
 }
 
 /* DashBoard Page */
-.content-dashboard {
+.dashboard-main-content-grid
+{
     margin-left: 270px;
     padding: 20px 20px 20px 0px;
     transition: var(--tran-05);
-    border-bottom: 2px solid var(--line);
-    max-width: 65%;
+    display: grid;
 }
 
-.sidebar.close~.content-dashboard {
+.sidebar.close~.dashboard-main-content-grid {
     margin-left: 113px;
 }
+
+
+.content-dashboard {
+    transition: var(--tran-05);
+    overflow: hidden;
+}
+
+/* .sidebar.close~.content-dashboard {
+    margin-left: 113px;
+}  */
 
 .header-dashboard {
     display: flex;
@@ -324,6 +334,10 @@ header .image-text .company {
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom: 2px solid var(--line);
+    border-radius: 0px;
+    padding: 20px 20px 20px 0px;
+    max-width: 98%;
 }
 
 @media (min-width: 768px) {
@@ -352,16 +366,6 @@ header .image-text .company {
     color: var(--text-color);
 }
 
-.content-grid {
-    margin-left: 250px;
-    padding: 20px;
-    transition: var(--tran-05);
-    max-width: 70%;
-}
-
-.sidebar.close~.content-grid {
-    margin-left: 88px;
-}
 
 .grid {
     display: flex;
@@ -372,16 +376,43 @@ header .image-text .company {
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 @media (min-width: 768px) {
     .grid {
+        overflow: hidden;
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
     }
 }
+.dash-grid-row{
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+}
+.item-dash-grid-row{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    overflow: hidden !important;
+}
+.item-dash {
+    overflow: hidden !important;
+}
+.teste{
+    overflow: auto !important;
+}
+.col-dash-grid{
+    background-color: var(--sidebar-color);
+    border-radius: 10px;
+    padding: 20px;
+}
 
+
+.header-row{
+    justify-content: start;
+}
 .dash-col {
     flex: 1;
     margin: 15px 22px 0px 0px;
@@ -416,8 +447,30 @@ header .image-text .company {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 13px;
+    margin:0px 0px 0px 13px;
 }
+.container-expenses-dash .header-btn{
+    border-bottom: 2px solid var(--line);
+    border-radius: 0px;
+    padding-bottom: 20px;
+}
+.container-expenses-dash .btn-filtro{
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.container-graph-dash .header-btn{
+    border-bottom: 2px solid var(--line);
+    border-radius: 0px;
+    padding-bottom: 20px;
+}
+.container-graph-dash .btn-filtro{
+    width: auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
 .header-col{
     margin: 0px 2px 0px 0px;
 }
@@ -542,4 +595,42 @@ header .image-text .company {
 .preparing{
     background-color: var(--prepare-purple);
     color: var(--prepare-text-purple);
+}
+
+.expenses-list{
+    list-style-type: none; 
+    display: grid;
+}
+.container-list{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.dash-imgs{
+    margin-right: 20px;
+    width: 50px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    border-radius: 50%; /* Faz a imagem ser circular */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+    color:white;
+}
+.expense-description{
+    color: var(--primary-color-light);
+}
+.expense-value{
+    color: var(--primary-color);
+}
+.see-more-btn{
+    background-color: var(--sidebar-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+    transition: var(--tran-03);
+}
+.see-more-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--primary-color-light);
+    transition: var(--tran-03);
 }

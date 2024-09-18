@@ -91,151 +91,212 @@
         </div>
     </nav>
 
-    <div class="content-dashboard">
-        <header class="header-dashboard">
-            <h1 class="title-dashboard">Dashboard - Oasis Food</h1>
-            <h2 class="subtitle-dashboard" id="current-date">Segunda, 03 de Agosto 2025</h2>
-        </header>
-    </div>
-
-    <div class="content-grid container-sm text-center">
-        <div class="grid row">
-            <div class="col dash-col">
-                <header class="header-grid row">
-                    <div class="col header-col">
-                        <div class="box">
-                            <i class='bx bx-dollar-circle main-icon'></i>
-                        </div>
-                    </div>
-                    <div class="col header-col">
-                        <a class="gain-info-text">+32.70%</a>
-                        <i class='bx bx-up-arrow-alt icon-green'></i>
-                    </div>
+    <div class="dashboard-main-content-grid">
+        <div class="dash-grid-row">
+            <div class="content-dashboard">
+                <header class="header-dashboard">
+                    <h1 class="title-dashboard">Dashboard - Oasis Food</h1>
+                    <h2 class="subtitle-dashboard" id="current-date">Segunda, 03 de Agosto 2025</h2>
                 </header>
 
-                <div class="content">
-                    <h2 class="number">$10,243.00</h2>
-                    <p class="subtitle-dashboard">Ganhos Totais</p>
-                </div>
 
+                <div class="container-sm text-center">
+                    <div class="grid row">
+                        <div class="col dash-col">
+                            <header class="header-grid row">
+                                <div class="col header-col">
+                                    <div class="box">
+                                        <i class='bx bx-dollar-circle main-icon'></i>
+                                    </div>
+                                </div>
+                                <div class="col header-col">
+                                    <a class="gain-info-text">+32.70%</a>
+                                    <i class='bx bx-up-arrow-alt icon-green'></i>
+                                </div>
+                            </header>
+
+                            <div class="content">
+                                <h2 class="number">$10,243.00</h2>
+                                <p class="subtitle-dashboard">Ganhos Totais</p>
+                            </div>
+
+                        </div>
+                        <div class="col dash-col">
+                            <header class="header-grid row">
+                                <div class="col header-col">
+                                    <div class="box">
+                                        <i class='bx bx-dish main-icon'></i>
+                                    </div>
+                                </div>
+                                <div class="col header-col">
+                                    <a class="lose-info-text">-10.00%</a>
+                                    <i class='bx bx-down-arrow-alt icon-red'></i>
+                                </div>
+                            </header>
+
+                            <div class="content">
+                                <h2 class="number">12,456</h2>
+                                <p class="subtitle-dashboard">Total de Pedidos</p>
+                            </div>
+
+
+                        </div>
+                        <div class="col dash-col">
+
+                            <header class="header-grid row">
+                                <div class="col header-col">
+                                    <div class="box">
+                                        <i class='bx bx-group main-icon'></i>
+                                    </div>
+                                </div>
+                                <div class="col header-col">
+                                    <a class="gain-info-text">+25.00%</a>
+                                    <i class='bx bx-up-arrow-alt icon-green'></i>
+                                </div>
+                            </header>
+
+                            <div class="content">
+                                <h2 class="number">1,313</h2>
+                                <p class="subtitle-dashboard">Total de Clientes</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="header-grid row">
+                        <div class="col-8 dash-col">
+                            <header class="header-btn">
+                                <h1 class="title-dashboard">Relatórios de Pedidos</h1>
+                                <button class="btn-filtro">
+                                    <i class='bx bx-filter'></i>
+                                    <a>Filtro</a>
+                                </button>
+                            </header>
+                            <div class="header-grid clients-row">
+                                <div class="col clients-col">Cliente</div>
+                                <div class="col clients-col">Pedido</div>
+                                <div class="col clients-col">Total Pago</div>
+                                <div class="col clients-col">Status</div>
+                            </div>
+                            <div class="clients-grid">
+                                <ul class="clients-list">
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'></i>
+                                            Goku
+                                        </div>
+                                        <div class="client-info id-order">#123123</div>
+                                        <div class="client-info value-order">$500,07</div>
+                                        <div class="client-info status-order delivered">Entregue</div>
+                                    </li>
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'
+                                                style="background-color: blueviolet; border-color: blueviolet;"></i>Vegeta
+                                        </div>
+                                        <div class="client-info id-order">#123124</div>
+                                        <div class="client-info value-order">$413,17</div>
+                                        <div class="client-info status-order preparing">Em Preparo</div>
+                                    </li>
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'
+                                                style="background-color: brown; border-color: brown;"></i>
+                                            Kurilin
+                                        </div>
+                                        <div class="client-info id-order">#123125</div>
+                                        <div class="client-info value-order">$211,31</div>
+                                        <div class="client-info status-order pending">Pendente</div>
+                                    </li>
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'
+                                                style="background-color: cadetblue; border-color: cadetblue;"></i>
+                                            Mr. Satan
+                                        </div>
+                                        <div class="client-info id-order">#123126</div>
+                                        <div class="client-info value-order">$42,07</div>
+                                        <div class="client-info status-order delivered">Entregue</div>
+                                    </li>
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'
+                                                style="background-color: pink; border-color: pink;"></i>
+                                            Majin Boo
+                                        </div>
+                                        <div class="client-info id-order">#123127</div>
+                                        <div class="client-info value-order">$800,12</div>
+                                        <div class="client-info status-order pending">Pendente</div>
+                                    </li>
+                                    <li class="clients">
+                                        <div class="client-info client-name">
+                                            <i class='bx bxs-user client-icon'
+                                                style="background-color: green; border-color: green;"></i>
+                                            Piccolo
+                                        </div>
+                                        <div class="client-info id-order">#123128</div>
+                                        <div class="client-info value-order">$5,50</div>
+                                        <div class="client-info status-order delivered">Entregue</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col dash-col">
-                <header class="header-grid row">
-                    <div class="col header-col">
-                        <div class="box">
-                            <i class='bx bx-dish main-icon'></i>
-                        </div>
-                    </div>
-                    <div class="col header-col">
-                        <a class="lose-info-text">-10.00%</a>
-                        <i class='bx bx-down-arrow-alt icon-red'></i>
-                    </div>
-                </header>
 
-                <div class="content">
-                    <h2 class="number">12,456</h2>
-                    <p class="subtitle-dashboard">Total de Pedidos</p>
+            <div class="item-dash-grid-row">
+                <div class="col-dash-grid">
+                    <div class="container-expenses-dash">
+                        <header class="header-btn">
+                            <h4>Despesas</h4>
+                            <button class="btn-filtro">
+                                <i class='bx bx-chevron-down'></i>
+                                <a>Hoje</a>
+                            </button>
+                        </header>
+                        <ul class="expenses-list">
+                            <li class="container-list">
+                                <img src="/imgs/ferramentas-de-limpeza.png" class="dash-imgs"></img>
+                                <div class="text-content">
+                                    <div class="expense-description">Produtos de Limpeza</div>
+                                    <div class="expense-value">- $730,00</div>
+                                </div>
+                            </li>
+                            <li class="container-list">
+                                <img src="/imgs/ingrediente.png" class="dash-imgs"></img>
+                                <div class="text-content">
+                                    <div class="expense-description">Reposição de Ingredientes</div>
+                                    <div class="expense-value">- $2.450,00</div>
+                                </div>
+                            </li>
+                            <li class="container-list">
+                                <img src="/imgs/estorno.png" class="dash-imgs"></img>
+                                <div class="text-content">
+                                    <div class="expense-description">Estorno de Pedido</div>
+                                    <div class="expense-value">- $80,95</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="see-more-btn">Ver mais</button>
+                    </div>
                 </div>
-
-
-            </div>
-            <div class="col dash-col">
-
-                <header class="header-grid row">
-                    <div class="col header-col">
-                        <div class="box">
-                            <i class='bx bx-group main-icon'></i>
-                        </div>
+                <div class="col-dash-grid">
+                    <div class="container-graph-dash">
+                        <header class="header-btn">
+                            <h4>Relatórios Analiticos</h4>
+                            <button class="btn-filtro">
+                                <i class='bx bx-chevron-down' ></i>
+                                <a>Hoje</a>
+                            </button>
+                        </header>
                     </div>
-                    <div class="col header-col">
-                        <a class="gain-info-text">+25.00%</a>
-                        <i class='bx bx-up-arrow-alt icon-green'></i>
-                    </div>
-                </header>
-
-                <div class="content">
-                    <h2 class="number">1,313</h2>
-                    <p class="subtitle-dashboard">Total de Clientes</p>
                 </div>
-
             </div>
         </div>
 
-        <div class="header-grid row">
-            <div class="col-8 dash-col">
-                <header class="header-dashboard header-btn">
-                    <h1 class="title-dashboard">Relatórios de Pedidos</h1>
-                    <button class="btn-filtro">
-                        <i class='bx bx-filter'></i>
-                        <a>Filtro</a>
-                    </button>
-                </header>
-                <div class="header-grid clients-row">
-                    <div class="col clients-col">Cliente</div>
-                    <div class="col clients-col">Pedido</div>
-                    <div class="col clients-col">Total Pago</div>
-                    <div class="col clients-col">Status</div>
-                </div>
-                <div class="clients-grid">
-                    <ul class="clients-list">
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon'></i>
-                                Goku
-                            </div>
-                            <div class="client-info id-order">#123123</div>
-                            <div class="client-info value-order">$500,07</div>
-                            <div class="client-info status-order delivered">Entregue</div>
-                        </li>
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon' style="background-color: blueviolet; border-color: blueviolet;"></i>Vegeta
-                            </div>
-                            <div class="client-info id-order">#123124</div>
-                            <div class="client-info value-order">$413,17</div>
-                            <div class="client-info status-order preparing">Em Preparo</div>
-                        </li>
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon' style="background-color: brown; border-color: brown;"></i>
-                                Kurilin
-                            </div>
-                            <div class="client-info id-order">#123125</div>
-                            <div class="client-info value-order">$211,31</div>
-                            <div class="client-info status-order pending">Pendente</div>
-                        </li>
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon' style="background-color: cadetblue; border-color: cadetblue;"></i>
-                                Mr. Satan
-                            </div>
-                            <div class="client-info id-order">#123126</div>
-                            <div class="client-info value-order">$42,07</div>
-                            <div class="client-info status-order delivered">Entregue</div>
-                        </li>
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon' style="background-color: pink; border-color: pink;"></i>
-                                Majin Boo
-                            </div>
-                            <div class="client-info id-order">#123127</div>
-                            <div class="client-info value-order">$800,12</div>
-                            <div class="client-info status-order pending">Pendente</div>
-                        </li>
-                        <li class="clients">
-                            <div class="client-info client-name">
-                                <i class='bx bxs-user client-icon' style="background-color: green; border-color: green;"></i>
-                                Piccolo
-                            </div>
-                            <div class="client-info id-order">#123128</div>
-                            <div class="client-info value-order">$5,50</div>
-                            <div class="client-info status-order delivered">Entregue</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
+
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
