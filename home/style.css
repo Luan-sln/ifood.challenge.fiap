@@ -18,6 +18,11 @@
     --text-color: #707070;
     --title-color: #cfcfcf;
     --gain-green: #50D1AA;
+    --delivered-green: #6be2be6b;
+    --prepare-purple: #9290fe6b;
+    --prepare-text-purple: #9290FE;
+    --pending-orange: #FFB5726b;
+    --pending--text-orange: #FFB572;
     --lose-red: #FF7CA3;
     --orange: #FFB572;
     --blue: #65B0F6;
@@ -473,6 +478,7 @@ header .image-text .company {
 .btn-filtro:hover{
     background-color: var(--primary-color);
     transition: var(--tran-03);
+    border-color: var(--primary-color);
 }
 
 .clients-row{
@@ -482,4 +488,58 @@ header .image-text .company {
 }
 .clients-col{
     margin: 20px 20px 15px 20px;
+}
+
+.clients-list{
+    list-style-type: none; 
+}
+.clients{
+    display: grid;
+    grid-template-columns: 128px 135px 76px 138px; /* Definindo tamanhos fixos para as colunas */
+    gap: 10px;
+    /* display: flex; */
+    border-radius: 6px;
+    color: var(--title-color);
+    text-align: start;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.client-info{
+    margin: 20px 0px 15px 0px;
+}
+
+.client-icon{
+    margin-right: 3px;
+    border: 10px solid var(--orange);
+    border-radius: 100%;
+    background-color: var(--orange);
+    color: var(--body-color)
+}
+
+.status-order{
+    border: 2px solid none;
+    border-radius: 15px;
+    text-align: -webkit-center;
+    width: fit-content;
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+    justify-self: end;
+
+}
+
+.delivered{
+    background-color: var(--delivered-green);
+    color: var(--gain-green);
+}
+
+.pending{
+    background-color: var(--pending-orange);
+    color: var(--pending--text-orange);
+}
+.preparing{
+    background-color: var(--prepare-purple);
+    color: var(--prepare-text-purple);
 }
