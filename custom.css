@@ -131,9 +131,9 @@
 
 .table-danger {
   --bs-table-color: #000;
-  --bs-table-bg: #f8d7da;
+  --bs-table-bg: #cfcfcf;
   --bs-table-border-color: #c6acae;
-  --bs-table-striped-bg: #eccccf;
+  --bs-table-striped-bg: #cfcfcf;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #dfc2c4;
   --bs-table-active-color: #000;
@@ -157,9 +157,9 @@
 
 .table-dark {
   --bs-table-color: #fff;
-  --bs-table-bg: #212529;
-  --bs-table-border-color: #4d5154;
-  --bs-table-striped-bg: #2c3034;
+  --bs-table-bg: #1F1D2B;
+  --bs-table-border-color: #707070;
+  --bs-table-striped-bg: #70707038;
   --bs-table-striped-color: #fff;
   --bs-table-active-bg: #373b3e;
   --bs-table-active-color: #fff;
