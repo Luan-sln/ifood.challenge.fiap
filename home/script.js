@@ -13,3 +13,17 @@ toggle.addEventListener("click" , () =>{
 searchBtn.addEventListener("click" , () =>{
     sidebar.classList.remove("close");
 })
+
+function showPage(pageId) {
+    // Esconde todas as páginas
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => page.style.display = 'none');
+
+    // Mostra a página selecionada
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.style.display = 'block';
+    } else {
+        console.error(`Página com ID ${pageId} não encontrada.`);
+    }
+}
